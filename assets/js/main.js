@@ -1,30 +1,40 @@
 
 function btnGetPrice() {
 
-
     //var declaretion
-    const kilometers = Number(document.getElementById("km").value);
-    const age = Number(document.getElementById("selectAge").value);
-    const priceKm = 0.21;
-    let ticketPrice = kilometers * priceKm;
-    let discountPrice
+    const kilometers = document.getElementById("km").value;
+    const age = document.getElementById("selectAge").value;
+    const ticketPrice = document.getElementById("ticketPrice");
 
+    const priceKm = 0.21;
+    let discount = 0;
+    
     switch (age) {
         case "ageNoDescount":
-            discountPrice = 1;
+            discount = 1;
             break;
         case "under18":
-            discountPrice = 0.2;
+            discount = 0.2;
             break;
         case "over65":
-            discountPrice = 0.4;
-            break;
-        case "emptyAge":
-            discountPrice = "Error!!! Enter only number.";
+            discount = 0.4;
             break;
     }
 
-    //var declaretion
+    let Price = kilometers * priceKm * discount;
+    ticketPrice.innerHTML = `Price: ${Price.toFixed(2)} € `;
+
+    if (isNaN(kilometers)) {
+        ticketPrice.innerHTML = "Error km";
+      
+    }
+
+    if (isNaN(age)) {
+        ticketPrice.innerHTML = "Error age";
+        
+    }
+
+/*     //var declaretion
     let totalPrice = ticketPrice * discountPrice
     let resultEl = document.getElementById("ticketPrice");
 
@@ -32,5 +42,5 @@ function btnGetPrice() {
         resultEl.innerHTML = "Error!!! Enter only number."
     } else {
         resultEl.innerHTML = `Price: ${totalPrice.toFixed(2)} € `;
-    }
+    } */
 }
