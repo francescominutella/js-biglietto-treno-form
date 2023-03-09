@@ -10,14 +10,16 @@ function btnGetPrice() {
     let totalPrice
 
 
-    if (age < 18) {
-        totalPrice = 0.2;
-
-    } else if (age > 65) {
-        totalPrice = 0.4;
-
-    } else {
-        totalPrice = 1;
+    switch (age) {
+        case "ageNoDescount":
+            totalPrice = 1;
+            break;
+        case "under18":
+            totalPrice = 0.2;
+            break;
+        case "over65":
+            totalPrice = 0.4;
+            break;
     }
 
     //var declaretion
