@@ -1,8 +1,7 @@
-let kilometers = Number(prompt("Enter distance kilometers:"));
+let kilometers
 console.log(kilometers)
 
-
-let age = Number(prompt("Enter age:"));
+let age
 console.log(age)
 
 const priceKm = 0.21;
