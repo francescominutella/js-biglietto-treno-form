@@ -8,6 +8,7 @@ function btnGetPrice() {
     const priceKm = 0.21;
     let ticketPrice = kilometers * priceKm;
     let totalPrice
+    
 
     if (age < 18) {
         totalPrice = 0.2;
