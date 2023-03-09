@@ -1,10 +1,11 @@
 
 function btnGetPrice() {
- 
+
     //var declaretion
     const kilometers = document.getElementById("km").value;
     const age = document.getElementById("selectAge").value;
     const ticketPrice = document.getElementById("ticketPrice");
+    
 
     const priceKm = 0.21;
     let discount = 0;
@@ -23,16 +24,6 @@ function btnGetPrice() {
 
     let Price = kilometers * priceKm * discount;
     ticketPrice.innerHTML = `Price: ${Price.toFixed(2)} € `;
-
-    if (isNaN(kilometers)) {
-        ticketPrice.innerHTML = "Error km";
-      
-    }
-
-    if (isNaN(age)) {
-        ticketPrice.innerHTML = "Error age";
-        
-    }
 
 /*     //var declaretion
     let totalPrice = ticketPrice * discountPrice
