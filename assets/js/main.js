@@ -1,8 +1,10 @@
 
 function btnGetPrice() {
+
+
     //var declaretion
-    let kilometers 
-    let age
+    const kilometers = Number(document.getElementById('km').value);
+    const age = Number(document.getElementById('age').value);
     const priceKm = 0.21;
     let ticketPrice = kilometers * priceKm;
     let totalPrice
@@ -14,7 +16,7 @@ function btnGetPrice() {
         totalPrice = 0.4;
 
     } else {
-        totalPrice = 0;
+        totalPrice = 1;
     }
 
     //var declaretion
