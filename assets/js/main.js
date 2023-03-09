@@ -1,15 +1,13 @@
+
+
+
 let kilometers
-console.log(kilometers)
 
 let age
-console.log(age)
 
 const priceKm = 0.21;
-console.log(priceKm)
-
 
 let ticketPrice = kilometers * priceKm;
-console.log(ticketPrice);
 
 let totalPrice
 
