@@ -19,7 +19,7 @@ function btnGetPrice() {
 
     //var declaretion
     const discountPrice = ticketPrice * totalPrice
-    const resultEl = document.getElementById("result");
+    const resultEl = document.getElementById("ticketPrice");
 
     if (isNaN(kilometers)) {
         resultEl.innerHTML = "Error!!! Enter only number."
