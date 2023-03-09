@@ -1,7 +1,7 @@
 
 function btnGetPrice() {
     //var declaretion
-    let kilometers
+    let kilometers 
     let age
     const priceKm = 0.21;
     let ticketPrice = kilometers * priceKm;
