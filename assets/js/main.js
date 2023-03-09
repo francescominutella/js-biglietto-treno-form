@@ -32,8 +32,7 @@ const discountPrice = ticketPrice * totalPrice
 const resultEl = document.getElementById("result");
 
 if (isNaN(kilometers)){
-    alert("Error")
-    resultEl.innerHTML = "Error_!!!"
+    resultEl.innerHTML = "Error!!! Enter only number."
 } else{
     resultEl.innerHTML = `Price: ${discountPrice.toFixed(2)} € `;
 }
