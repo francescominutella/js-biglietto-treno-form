@@ -1,6 +1,6 @@
 
 function btnGetPrice() {
-
+ 
     //var declaretion
     const kilometers = document.getElementById("km").value;
     const age = document.getElementById("selectAge").value;
