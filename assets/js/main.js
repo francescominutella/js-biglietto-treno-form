@@ -13,7 +13,7 @@ function btnGetPrice() {
     } else if (age > 65) {
         totalPrice = 0.4;
 
-    } else if (age >= 18 && age <= 65) {
+    } else {
         totalPrice = 0;
     }
 
